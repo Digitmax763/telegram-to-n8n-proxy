@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-N8N_WEBHOOK_URL = os.getenv("N8N_WEBHOOK_URL", "https://n8n.srv848053.hstgr.cloud/webhook/lead-telegram")
+N8N_WEBHOOK_URL = os.getenv("N8N_WEBHOOK_URL", "https://n8n.srv848053.hstgr.cloud/webhook-test/lead-telegram")
 
 @app.route("/", methods=["POST"])
 def telegram_proxy():
